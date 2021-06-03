@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <title>마타슈 다이어리-제과 왕초보</title>
+    <style media="screen">
+    body {
+      background-color: #141E30
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px
+    }
+    h1 {
+        color: white;
+        border-bottom:none;
+    }
+    ul {
+      font-weight: bold;
+      list-style-type: none;
+      margin: 35;
+      padding: 20;
+      overflow: hidden;
+      background-color: #141E30;
+      font-size: 120%;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #E1C4C4;
+      padding: 10px;
+      justify-content: flex-start
+
+    }
+
+    .flex-item {
+      flex: 33%;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 10px solid #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      display:inline-block;
+      transition-property: transform;
+      transition-duration: 0.1s;
+    }
+
+    .flex-item > a:link {
+      text-decoration: none;
+      color: black;
+    }
+
+    .flex-item > a:visited {
+      text-decoration: none;
+      color: gray;
+    }
+
+    .flex-item > a:active {
+      transform: translate(110% 110%);
+      font-size: 2em;
+      text-decoration: none;
+      color: powderblue;
+    }
+
+    /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+    @media (max-width: 800px) {
+      .flex-item {
+        flex: 100%;
+      }
+    }
+
+    #macaron img {
+      max-width: 100%;
+      height: auto
+    }
+
+    #tart img {
+      max-width: 100%;
+      height: auto
+    }
+
+    #puff img {
+      max-width: 100%;
+      height: auto
+    }
+
+    .main img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      max-width: 70%;
+      height: auto;
+    }
+
+    * {
+      font-family: 'Poor Story', cursive;
+    }
+
+    #fb img, #ig img, #yt img {
+      width: 30px;
+      margin: 15px;
+    }
+
+    p {
+      font-size: 150%;
+      text-align: center;
+      color: white;
+      margin: 100px auto;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>마타슈 Diary</h1>
+      <ul>
+        <li><a href="dessert.html">메인</a></li>
+        <li><a href="intro.html">Intro</a></li>
+        <li><a href="macaron.html">마카롱</a></li>
+        <li><a href="tart.html">타르트</a></li>
+        <li><a href="puff.html">슈</a></li>
+      </ul>
+      <div class="main">
+          <img src="egg%20tart.jpg" alt="에그 타르트">
+      </div>
+      <p>This is my records for my first baking class! <br>And also it's my first CSS practice. <br>I'm learning and trying to make it look better. <br>Though there is a long distance that I have to keep going on...</p>
+      <div class="flex-container">
+        <div class="flex-item" id="macaron">
+          <a href="macaron.html"><img src="macaron.jpg" alt="마카롱 in the packge!">
+          마카롱</a>
+        </div>
+        <div class="flex-item" id="tart">
+          <a href="tart.html"><img src="tart.jpg" alt="에그 타르트 done!">
+          타르트</a>
+        </div>
+        <div class="flex-item" id="puff">
+          <a href="puff.html"><img src="puff.jpg" alt="슈 is ready!">
+          슈</a>
+        </div>
+      </div>
+      </div>
+      <div class="footer">
+        <a href="https://www.facebook.com/joanne.lu.18" id="fb"> <img src='FB1.png'></a>
+        <a href="https://www.instagram.com/joanne78117/" id="ig"> <img src='IG1.png'></a>
+        <a href="https://www.youtube.com/channel/UCoOb-F7x8Nshbw6O6l1hFDw" id="yt"> <img src='YT1.png'></a>
+      </div>
+  </body>
+</html>

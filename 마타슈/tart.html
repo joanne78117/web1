@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <title>타르트가 다양해</title>
+    <style media="screen">
+    body {
+      background-color: #141E30
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px
+    }
+    h1 {
+        color: white;
+        border-bottom:none;
+    }
+    ul {
+      font-weight: bold;
+      list-style-type: none;
+      margin: 35;
+      padding: 20;
+      overflow: hidden;
+      background-color: #141E30;
+      font-size: 120%
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+
+    * {
+      font-family: 'Poor Story', cursive;
+    }
+
+    .content {
+      font-size: 120%;
+      color: white;
+      margin-right: 400px;
+      margin-left: 400px;
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 800px) {
+      .content {
+        margin: 60px;
+      }
+    }
+
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #E1C4C4;
+      padding: 10px;
+      justify-content: flex-start
+    }
+
+    
+
+    .item {
+      flex: 10%;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 10px solid #FFFFFF;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em
+    }
+
+    .item img {
+      width: 100%;
+    }
+
+    /* Responsive layout - makes a one column layout (100%) instead of a two-column layout (50%) */
+    @media (max-width: 800px) {
+      .item {
+        flex: 100%;
+      }
+    }
+
+    #fb img, #ig img, #yt img {
+      width: 30px;
+      margin: 15px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>타르트 Tart</h1>
+      <ul>
+        <li><a href="dessert.html">메인</a></li>
+        <li><a href="intro.html">Intro</a></li>
+        <li><a href="macaron.html">마카롱</a></li>
+        <li><a href="tart.html">타르트</a></li>
+        <li><a href="puff.html">슈</a></li>
+      </ul>
+    <div class="content">
+      타르트(tart)는 윗쪽이 패스트리로 덮이지 않은 파이 형태의 패스트리 양과자의 일종이다. 보통 달콤한 맛이 나게 하여 먹는다. 양파 타르트, 블루베리 타르트, 타르트 타틴, 애플 타르트 등 여러 종류가 있다. 일반적으로, 파이 도우(dough)는 밀가루, 유지(fat), 물 등을 섞어 만든다. 이스트는 넣지 않는다. 여기서 유지(fat)란 버터, 혹은 마가린을 말한다. 생지는 보통 납작하게 만든다. 잎사귀 두께만큼 두께를 갖도록 만든다. 장식을 위에 두고 혹은 위에 두지 않고 팬에 넣고 굽는다.
+    </div>
+    <div class="container">
+      <div class="item" id="strawberry-tart">
+        <img src="strawberry tart.jpg" alt="딸기 딸기 내 사랑~">
+        딸기 타르트
+      </div>
+      <div class="item" id="blackcherry-tart">
+        <img src="black%20cherry%20tart.jpg" alt="의외로 맛있는 블랙 체리!">
+        블랙체리 타르트
+      </div>
+      <div class="item" id="egg-tart">
+        <img src="egg%20tart.jpg" alt="에그 타르트 쵝~오">
+        에그 타르트
+      </div>
+      <div class="item" id="cheese-tart">
+        <img src="cheese tart.jpg" alt="치~즈 타르트 어때?">
+        치즈 타르트
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://www.facebook.com/joanne.lu.18" id="fb"> <img src='FB1.png'></a>
+      <a href="https://www.instagram.com/joanne78117/" id="ig"> <img src='IG1.png'></a>
+      <a href="https://www.youtube.com/channel/UCoOb-F7x8Nshbw6O6l1hFDw" id="yt"> <img src='YT1.png'></a>
+    </div>
+  </body>
+</html>

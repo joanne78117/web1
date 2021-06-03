@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <title>마카롱은 세 가지</title>
+    <style media="screen">
+    body {
+      background-color: #141E30
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    h1 {
+        color: white;
+        border-bottom:none;
+    }
+    ul {
+      font-weight: bold;
+      list-style-type: none;
+      margin: 35;
+      padding: 20;
+      overflow: hidden;
+      background-color: #141E30;
+      font-size: 120%
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+    
+    * {
+      font-family: 'Poor Story', cursive;
+    }
+
+    .content {
+      column-count: 2;
+      column-gap: 60px;
+      color: white;
+      font-size: 120%;
+      margin: 120px;
+    }
+
+    .france, .italy, .swiss {
+    width:30%;
+    }
+
+    @media(max-width: 600px) {
+      .content {
+        column-count: 1;
+      }
+    }
+   
+    .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     text-align: center;
+     color: white;
+     font-size: 150%;
+     margin: 120px;
+    }
+    
+    .france img, .italy img, .swiss img {
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+    .france, .italy, .swiss {
+    width:100%;
+    }
+    }
+
+    #fb img, #ig img, #yt img {
+      width: 30px;
+      margin: 15px;
+    }
+
+    .france > p:hover , .italy > p:hover , .swiss > p:hover {
+      transform: 
+        scale(1.5);     
+    }
+
+    .container article {
+      font-size: 100%;
+      margin: 50px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>마카롱 Macaron</h1>
+      <ul>
+        <li><a href="dessert.html">메인</a></li>
+        <li><a href="intro.html">Intro</a></li>
+        <li><a href="macaron.html">마카롱</a></li>
+        <li><a href="tart.html">타르트</a></li>
+        <li><a href="puff.html">슈</a></li>
+      </ul>
+    <div class="content">
+      마카롱(영어: Macarong,프랑스어: Macaron, IPA: [makaˈʁɔ̃])은 프랑스의 대표적인 당과 제품이다. 머랭을 주재료로 하고 달걀 흰자위, 백설탕, 아몬드 가루와 밀가루 등으로 만든 과자류이며, 모양은 동그랗고 손에 들어갈 수 있을 만큼 조그맣다. 마카롱의 구조는 잘 부서지지만, 약간 딱딱한 껍질로 된 위아래 부위와, 그 중간에 머랭이나 잼, 마지팬, 크림등을 넣어 만든 부드러운 중간 부위로 나뉜다. 지역마다 별명도 있는데, 프랑스의 수도인 파리에서는 제르베르(Gerber), 룩셈부르크와 독일어를 이용하는 일부 지역에서는 룩셈부르게를리(Luxemburgerli)라고도 하며, 마카룬과 혼동되지 않도록 프랑스 마카롱(French Macaron)이라고도 한다. 프랑스와 유럽 국가에서 가장 인기를 많이 얻고 있다. 오늘날 마카롱은 프랑스를 대표하는 과자로 여겨지지만, 본래 마카롱은 이탈리아에서 유래된 과자다. 그러나 마카롱이 처음 만들어진 곳은 확실하게 알려져 있지 않다. 대부분의 문헌은 1500년에 시작되었음을 알리지만, 일부 자료들은 중세 유럽에서 마카롱이 처음 만들어졌다고 한다. 더불어 이탈리아의 가톨릭 수도원에서 처음 만들어졌다고도 하는데, 또한 어떤 자료들은 791년, 코르메리 (Cormery)라는 프랑스 중부에 자리한 마을에서 만들기 시작했다고도 한다. 그러나 이 자료들은 공식적으로 확인되지 않았으며, 마카롱에 대한 공식적인 자료들로 인정을 받지 못하고 있다.
+    </div>
+    <div class="container">
+      <div class="france">
+        <img src="macaron1.jpg"> 
+        <a onclick="fetchPage('french')">프렌치 마카롱</a>
+      </div>
+      <div class="italy">
+        <img src="macaron1.jpg"> 
+        <a onclick="fetchPage('italian')">이탈리안 마카롱</a>
+      </div>
+      <div class="swiss">
+        <img src="macaron1.jpg"> 
+        <a onclick="fetchPage('swiss')">스위스 마카롱</a>
+      </div>
+      <article>
+
+      </article>
+    </div>
+    <div class="footer">
+      <a href="https://www.facebook.com/joanne.lu.18" id="fb"> <img src='FB1.png'></a>
+      <a href="https://www.instagram.com/joanne78117/" id="ig"> <img src='IG1.png'></a>
+      <a href="https://www.youtube.com/channel/UCoOb-F7x8Nshbw6O6l1hFDw" id="yt"> <img src='YT1.png'></a>
+    </div>
+    <script>
+      function fetchPage(name){  
+        fetch(name).then(function(response){
+                  response.text().then(function(text){
+                      document.querySelector('article').innerHTML = text;
+                  })
+              });
+      }
+      </script>
+  </body>
+</html>
